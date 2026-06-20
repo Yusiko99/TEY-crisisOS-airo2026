@@ -178,7 +178,8 @@ Təhlükəsiz demo və təlim ssenariləri:
 - Suspicious Admin Login
 
 ---
-
+![demo-video](docs/demo-video.gif)
+---
 ## Sistem Arxitekturası
 
 CrisisOS AI sadəcə insident qeydiyyatı sistemi deyil. Sistem qoşulduğu servis və infrastruktur mənbələrini davamlı izləyən, risk aşkarlayan və agentic response workflow başladan müdafiə platformasıdır.
