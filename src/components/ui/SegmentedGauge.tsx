@@ -46,7 +46,7 @@ export default function SegmentedGauge({
   };
 
   return (
-    <div className="w-full aspect-[2/1] relative overflow-hidden">
+    <div className="@container w-full aspect-[2/1] relative overflow-hidden">
       {/* We use a square container to make Recharts radius calculation match the full width perfectly */}
       <div className="absolute w-full aspect-square top-0 left-0">
         <ResponsiveContainer width="100%" height="100%">
@@ -79,12 +79,12 @@ export default function SegmentedGauge({
       </div>
       
       {/* Text overlay - positioned at the bottom of the wrapper */}
-      <div className="absolute bottom-0 w-full flex flex-col items-center justify-end pb-1">
-        <span className="text-2xl font-bold text-white tracking-tighter leading-none">
+      <div className="absolute bottom-0 w-full flex flex-col items-center justify-end pb-0.5">
+        <span className="font-bold text-white tracking-tighter leading-none" style={{ fontSize: 'clamp(0.6rem, 5cqw, 1.5rem)' }}>
           {valuePrefix}{value}{valueSuffix}
         </span>
         {label && (
-          <span className="text-[#A1A1AA] text-xs uppercase tracking-wider mt-1">
+          <span className="text-[#A1A1AA] uppercase tracking-wider mt-0.5" style={{ fontSize: 'clamp(0.3rem, 5cqw, 0.875rem)' }}>
             {label}
           </span>
         )}
