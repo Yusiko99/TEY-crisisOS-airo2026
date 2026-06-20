@@ -62,8 +62,13 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           <button className="w-10 h-10 rounded-full flex items-center justify-center bg-[#ffffff0a] border border-[#ffffff14] text-[#A1A1AA] hover:text-white transition-colors">
             <i className="bx bx-cog text-xl"></i>
           </button>
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#22D3EE] to-[#C871DA] flex items-center justify-center text-black font-bold">
-            AN
+          <div className="relative cursor-pointer">
+            <img 
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" 
+              alt="User profile" 
+              className="w-10 h-10 rounded-full object-cover border border-[#ffffff20] hover:border-[#ffffff40] transition-colors"
+            />
+            <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-[#22C55E] border-2 border-[#0A0A0A] rounded-full"></span>
           </div>
         </div>
       </header>
