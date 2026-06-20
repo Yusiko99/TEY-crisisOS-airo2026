@@ -1,0 +1,14 @@
+[
+  {
+    "timestamp": "2026-05-21T10:18:00Z",
+    "level": "ERROR",
+    "service": "payment-gateway",
+    "message": "Transaction timeout exceeded. Possible API abuse."
+  },
+  {
+    "timestamp": "2026-05-21T10:20:00Z",
+    "level": "WARN",
+    "service": "waf-edge",
+    "message": "Multiple blocked requests from IP 192.168.1.55"
+  }
+]

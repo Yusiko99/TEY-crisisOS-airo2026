@@ -1,26 +1,102 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #C871DA;
+  --secondary: #22D3EE;
+  --tertiary: #F43F5E;
+  --neutral-bg: #0A0A0A;
+
+  --surface-1: rgba(255, 255, 255, 0.045);
+  --surface-2: rgba(255, 255, 255, 0.07);
+  --surface-3: rgba(255, 255, 255, 0.10);
+
+  --border-soft: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(200, 113, 218, 0.30);
+
+  --text-main: #F8FAFC;
+  --text-muted: #A1A1AA;
+  --text-soft: #71717A;
+
+  --success: #22C55E;
+  --warning: #F59E0B;
+  --danger: #F43F5E;
+  --info: #22D3EE;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@theme {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+  --color-neutral-bg: var(--neutral-bg);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-surface-1: var(--surface-1);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+
+  --color-border-soft: var(--border-soft);
+  --color-border-strong: var(--border-strong);
+
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+  --color-text-soft: var(--text-soft);
+
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  --color-info: var(--info);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--neutral-bg);
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Styles defined in Prompt */
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.075),
+    rgba(255,255,255,0.035)
+  );
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 24px;
+  box-shadow:
+    0 24px 80px rgba(0,0,0,0.45),
+    inset 0 1px 0 rgba(255,255,255,0.06);
+  backdrop-filter: blur(18px);
+}
+
+.active-nav {
+  background: linear-gradient(
+    135deg,
+    rgba(200,113,218,0.28),
+    rgba(34,211,238,0.10)
+  );
+  color: #fff;
+  box-shadow: 0 0 28px rgba(200,113,218,0.22);
+}
+
+.primary-button {
+  background: linear-gradient(135deg, #C871DA, #22D3EE);
+  color: #0A0A0A;
+  font-weight: 700;
+  border-radius: 16px;
+  transition: opacity 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.primary-button:hover {
+  opacity: 0.9;
+}
+
+.danger-badge {
+  background: rgba(244,63,94,0.15);
+  border: 1px solid rgba(244,63,94,0.35);
+  color: #F43F5E;
 }

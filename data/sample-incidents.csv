@@ -1,0 +1,4 @@
+id,title,severity,status,reported_by
+INC-2026-001,Smart Parking Payment Attack,High,Open,System
+INC-2026-002,Citizen Data Leak Suspicion,Critical,In Progress,Admin
+INC-2026-003,Public Camera Network Offline,Medium,Resolved,System

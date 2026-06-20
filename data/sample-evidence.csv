@@ -1,0 +1,4 @@
+id,incident_id,file_name,type,collected_by
+EVD-001,INC-2026-001,payment-gateway-error.log,LOG,Rohan Mehta
+EVD-002,INC-2026-001,api-timeout-errors.png,Image,Rohan Mehta
+EVD-003,INC-2026-002,user-report-summary.xlsx,File,Meera Shah
