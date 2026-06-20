@@ -19,9 +19,6 @@ Platforma insidenti qəbul edir, AI triage məntiqi ilə analiz edir, risk balı
 | Seçilmiş tapşırıq | Tapşırıq 4 — Ağıllı şəhər insident cavab idarəetmə sistemi |
 | Məhsul tipi | Cyber Incident Response Management Platform |
 | Yanaşma | Müdafiə yönümlü, qanuni və simulyasiya edilmiş data əsaslı |
-| Demo istifadəçi | admin@crisisos.ai |
-| Demo şifrə | demo123 |
-
 ---
 
 ## Komanda Məlumatları
